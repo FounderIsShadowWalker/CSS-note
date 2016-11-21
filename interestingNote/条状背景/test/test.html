@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>线性渐变demo</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<a style="width: 149px; height: 149px;position: fixed; top: 0; right: 0;z-index: 9999;" href="https://github.com/FounderIsShadowWalker/CSS-note" target="_blank">
+    <img src="../img/forkme.png">
+</a>
+<div class="container">
+    <section class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>简单线性渐变</summary>
+            <hgroup class="demo">
+                <h1>线性渐变</h1>
+            </hgroup>
+        </div>
+        <style class="code" contenteditable="true">
+            .demo{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 200px;
+                line-height: 260px;
+                background-image: linear-gradient(0deg,#000, #fff);
+                text-align: center;
+                transform: translate(-50%,-50%);
+            }
+        </style>
+    </section>
+
+    <section class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>简单线性渐变</summary>
+            <hgroup class="demo1">
+                <h1>线性渐变</h1>
+            </hgroup>
+        </div>
+        <style class="code" contenteditable="true">
+            .demo1{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 200px;
+                line-height: 260px;
+                background-image: linear-gradient(to right,#000, #fff);
+                text-align: center;
+                transform: translate(-50%,-50%);
+            }
+        </style>
+    </section>
+
+    <section class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>简单线性渐变</summary>
+            <hgroup class="demo2">
+                <h1>线性渐变</h1>
+            </hgroup>
+        </div>
+        <style class="code" contenteditable="true">
+            .demo2{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 200px;
+                line-height: 260px;
+                background-image: linear-gradient(0deg,#000 40%, #fff 60%);
+                text-align: center;
+                transform: translate(-50%,-50%);
+                background-size: 100% 100px;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </section>
+
+    <section class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>简单线性渐变</summary>
+            <hgroup class="demo3">
+                <h1>线性渐变</h1>
+            </hgroup>
+        </div>
+        <style class="code" contenteditable="true">
+            .demo3{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 210px;
+                line-height: 210px;
+                background-image:  linear-gradient(45deg, red 15px, blue 15px);
+                text-align: center;
+                transform: translate(-50%,-50%);
+                background-size: 30px 30px;
+                background-repeat:no-repeat;
+                background-color: yellow;
+            }
+        </style>
+    </section>
+
+    <section class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>简单线性渐变</summary>
+            <hgroup class="demo4">
+                <h1>线性渐变</h1>
+            </hgroup>
+        </div>
+        <style class="code" contenteditable="true">
+            .demo4{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 210px;
+                line-height: 210px;
+                background-image:  linear-gradient(60deg, red 50%, blue 0);
+                text-align: center;
+                transform: translate(-50%,-50%);
+                background-size: 100px 100px;
+                background-repeat:no-repeat;
+                background-color: yellow;
+            }
+        </style>
+    </section>
+
+    <section class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>简单线性渐变</summary>
+            <hgroup class="demo5">
+                <h1>线性渐变</h1>
+            </hgroup>
+        </div>
+        <style class="code" contenteditable="true">
+            .demo5{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 210px;
+                line-height: 210px;
+                background:  repeating-linear-gradient(0deg, blue 0, red 30px);
+                text-align: center;
+                transform: translate(-50%,-50%);
+                background-size: 100px 100px;
+                background-repeat:no-repeat;
+                background-color: yellow;
+            }
+        </style>
+    </section>
+
+    <section class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>简单线性渐变</summary>
+            <hgroup class="demo6">
+                <h1>线性渐变</h1>
+            </hgroup>
+        </div>
+        <style class="code" contenteditable="true">
+            .demo6{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 210px;
+                line-height: 210px;
+                background:  repeating-linear-gradient(60deg, blue 0px, red 30px);
+                text-align: center;
+                transform: translate(-50%,-50%);
+                background-repeat:repeat;
+                background-color: yellow;
+            }
+        </style>
+    </section>
+
+    <section class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>简单线性渐变</summary>
+            <hgroup class="demo7">
+                <h1>线性渐变</h1>
+            </hgroup>
+        </div>
+        <style class="code" contenteditable="true">
+            .demo7{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 210px;
+                line-height: 210px;
+                background: linear-gradient(90deg, blue 50px, red 80px),
+                              linear-gradient(90deg, green 50px, purple 80px);
+                text-align: center;
+                transform: translate(-50%,-50%);
+                background-repeat:no-repeat;
+                background-color: yellow;
+            }
+        </style>
+    </section>
+
+    <section class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>简单线性渐变</summary>
+            <hgroup class="demo8">
+                <h1>线性渐变</h1>
+            </hgroup>
+        </div>
+        <style class="code" contenteditable="true">
+            .demo8{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 210px;
+                line-height: 210px;
+                background: linear-gradient(90deg, blue 50px, transparent 80px),
+                linear-gradient(90deg, green 50px, purple 80px);
+                text-align: center;
+                transform: translate(-50%,-50%);
+                background-repeat:no-repeat;
+                background-color: yellow;
+            }
+        </style>
+    </section>
+</div>
+
+</body>
+</html>
