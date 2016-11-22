@@ -102,8 +102,12 @@ linear-gradient 本身一旦形成就不会被覆盖(transparent 除外)
              
 这里是不会出现的purple的，因为这些区域被blue 和 red 已经填满了，不会被覆盖。
 
+*同时*
+只要 透明度<1 也会被后面的颜色 覆盖
+
 但是
 background: linear-gradient(90deg, blue 50px, transparent 80px),
           linear-gradient(90deg, green 50px, purple 80px);
-这里 就会出现purple了，因为transparent把位置空出来了，大家觉得这有什么好讲的，对比一下box-shadow 你就知道了两者异同了  
+这里 就会出现purple了，因为transparent把位置空出来了，大家觉得这有什么好讲的，对比一下box-shadow 你就知道了两者异同了
+  
                              
