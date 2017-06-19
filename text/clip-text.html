@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tri</title>
+    <style>
+        body{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: black;
+        }
+        div.wrapper{
+            position: absolute;
+            top: 30%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+            font-size: 180px;
+            font-weight: bold;
+            color: transparent;
+            background: url(timg.jpg)  center/cover no-repeat;
+            -webkit-background-clip: text;
+            animation: move 3s infinite ease-in-out;
+            animation-direction: alternate;
+            ;
+        }
+
+        @keyframes move {
+            0%{
+                background-position: 0 0;
+            }
+
+            50%{
+               background-position: center center;
+            }
+
+            100%{
+                background-position: 100% 100%;
+            }
+        }
+
+        @keyframes bgposition {
+            0% {
+                background-position: 100% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        div.nickName{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+            font-size: 180px;
+            font-weight: bold;
+            color: transparent;
+            background: linear-gradient(90deg,  #6f27b0 0%, rgba(0,0,0, 0.2) 50%, #CCCCCC 50%, #cb72aa 60%, #cb72aa 60%, #16a085 70%,#16a085 70%, #94e458 80%,
+            #94e458 80%, #ffa260 90%, #ffa260 90%, #CCCCCC 100%);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            animation:  bgposition 3s infinite ease-in-out;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    SHADOW
+</div>
+<div class="nickName">
+    WALKER
+</div>
+</body>
+</html>
