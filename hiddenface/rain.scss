@@ -1,0 +1,29 @@
+$animationTime: 2;
+$delayTime: 3;
+
+@function randomNum($max, $min:0){
+  @return ($min + random($max))
+}
+
+@for $i from 1 to 21 {
+
+  .drop:nth-child(#{$i}) {
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    left: #{randomNum(800, 20)}px;
+    top: #{randomNum(100, -5)}px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+    transform: rotate(#{randomNum(45, 30)}deg);
+    animation: move  #{randomNum($animationTime * 13, 7) / 20}s linear #{randomNum($delayTime) / 30}s infinite;
+  }
+}
+
+@keyframes move {
+  100% {
+    width: 3px;
+    height: 20px;
+    transform: translate3d(-650px, 650px, 0);
+    opacity: 0.1;
+  }
+}
